@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://i.postimg.cc/QtzZttpm/trazo-pincel-beige-textura-fondo.jpg'); /* Reemplaza 'tu_ruta_de_imagen.jpg' con la ruta de tu imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+
+.wrap {
+    max-width: 90%;
+    margin: 30px auto;
+}
+
+ul.tabs {
+    background: #363636;
+    list-style: none;
+    display: flex;
+}
+
+ul.tabs li {
+    flex: 1;
+}
+
+ul.tabs li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    padding: 20px 0;
+}
+
+.active {
+    background: #0984CC;
+}
+
+ul.tabs li a .tab-text {
+    margin-left: 8px;
+}
+
+.secciones {
+    background: #fff;
+}
+
+.secciones article {
+    padding: 30px;
+}
+
+.secciones article p {
+    text-align: justify;
+}
+
+@media screen and (max-width: 700px) {
+    ul.tabs li {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    ul.tabs li a {
+        padding: 15px 0;
+    }
+
+    ul.tabs li a .tab-text {
+        display: none;
+    }
+
+    .secciones article {
+        padding: 20px;
+    }
+}
+
+p {
+    margin-bottom: 20px; 
+}
+
+a {
+    text-decoration: underline; 
+    color: #0cb30c; 
+    font-weight: bold; 
+}
+
